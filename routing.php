@@ -3,7 +3,7 @@
 use core\App;
 use core\Utils;
 
-App::getRouter()->setDefaultRoute('contact'); // default
+App::getRouter()->setDefaultRoute('contact'); // default page
 App::getRouter()->setLoginRoute('login'); //login gdy za małe uprawnienia
 
 Utils::addRoute('contact',     'ContactCtrl');
