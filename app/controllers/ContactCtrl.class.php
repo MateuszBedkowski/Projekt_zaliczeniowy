@@ -41,7 +41,7 @@ class ContactCtrl {
     }
 
     public function action_contact(){
-        $this->validate();
+        // $this->validate();
         $this->generateView();
     }
 

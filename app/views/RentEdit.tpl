@@ -1,6 +1,6 @@
 {extends file="main.tpl"}
 
-{block name=top}
+{block name=content}
 
 <div class="bottom-margin">
 <form action="{$conf->action_root}rentSave" method="post" class="pure-form pure-form-aligned">

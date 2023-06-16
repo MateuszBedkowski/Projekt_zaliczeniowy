@@ -12,7 +12,7 @@ $conf->db_server = 'localhost';
 $conf->db_name = 'rental';
 $conf->db_user = 'root';
 $conf->db_pass = '';
-$conf->db_charset = 'utf8_polish_ci';
+$conf->db_charset = 'utf8';
 
 # Database config - optional
 $conf->db_port = '3306';

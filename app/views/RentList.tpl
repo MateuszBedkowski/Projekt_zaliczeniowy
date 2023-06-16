@@ -1,6 +1,6 @@
 {extends file="main.tpl"}
 
-{block name=top}
+{block name=content}
 
 <div class="bottom-margin">
 <form class="pure-form pure-form-stacked" action="{$conf->action_url}rentList">

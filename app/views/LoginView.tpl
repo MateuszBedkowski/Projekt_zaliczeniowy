@@ -1,5 +1,5 @@
 {extends file="main.tpl"}
-{block name=top}
+{block name=content}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
