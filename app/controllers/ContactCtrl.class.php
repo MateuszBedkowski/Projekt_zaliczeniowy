@@ -37,9 +37,11 @@ class ContactCtrl {
             return false;
 
         return !App::getMessages()->isError();
+        
     }
 
     public function action_contact(){
+        $this->validate();
         $this->generateView();
     }
 
