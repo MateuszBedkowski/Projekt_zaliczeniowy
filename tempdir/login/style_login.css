@@ -29,7 +29,7 @@ header {
     z-index: 99;
 }
 
-.rent {
+h2.rent {
     font-size:2em;
     color: #f00;
     user-select: none;
