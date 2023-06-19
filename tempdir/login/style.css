@@ -124,7 +124,7 @@ header {
     z-index: 1;
 }
 
-h2.form-box  {
+.form-box h2 {
     font-size: 2em;
     color: #fff;
     text-align: center;
