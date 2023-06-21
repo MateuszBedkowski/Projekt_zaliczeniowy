@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8"/>
     <title>Home</title>
-    {*<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
         integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous"> 
-    <link rel="stylesheet" href="{$conf->app_url}/css/style.css"> *}
+    <link rel="stylesheet" href="{$conf->app_url}/css/style.css">
     <link rel="stylesheet" href="{$conf->app_url}/css/style_login.css">
     <style>
     </style>
