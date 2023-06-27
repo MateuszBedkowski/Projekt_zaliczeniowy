@@ -109,9 +109,9 @@ $_smarty_tpl->tpl_vars['w']->do_else = false;
 </td><td><?php echo $_smarty_tpl->tpl_vars['w']->value["samochody_idsamochod"];?>
 </td><td><?php echo $_smarty_tpl->tpl_vars['w']->value["pracownicy_idpracownik"];?>
 </td><td><a class="button-small pure-button button-secondary" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_url;?>
-rentEdit/<?php echo $_smarty_tpl->tpl_vars['p']->value['idwypozyczenie'];?>
+rentEdit/<?php echo $_smarty_tpl->tpl_vars['w']->value['idwypozyczenie'];?>
 ">Edytuj</a>&nbsp;<a class="button-small pure-button button-warning" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_url;?>
-rentDelete/<?php echo $_smarty_tpl->tpl_vars['p']->value['idwypozyczenie'];?>
+rentDelete/<?php echo $_smarty_tpl->tpl_vars['w']->value['idwypozyczenie'];?>
 ">Usuń</a></td></tr>
 	<?php
 }
