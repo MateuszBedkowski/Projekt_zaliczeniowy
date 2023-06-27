@@ -1,6 +1,6 @@
 {extends file="main.tpl"}
 
-{block name=content}
+{block name=bottom}
 
 	<div class="bottom-margin">
 		<form class="pure-form pure-form-stacked" action="{$conf->action_url}rentList">
@@ -12,10 +12,36 @@
 		</form>
 	</div>	
 
-	{/block}
 
-	{block name=bottom}
+	    <div class="car-list">
+        <div class="car-item">
+            <img src="zdj/Audi_S3.jpg" alt="Audi S3">
+            <button class="rent-button">Wypożycz</button>
+        </div>
+        <div class="car-item">
+            <img src="zdj/BMW_F30.jpg" alt="BMW F30">
+            <button class="rent-button">Wypożycz</button>
+        </div>
+        <div class="car-item">
+            <img src="zdj/BMW_F36.jpg" alt="BMW F36">
+            <button class="rent-button">Wypożycz</button>
+        </div>
+        <div class="car-item">
+            <img src="zdj/Chevrolet_Trax.jpg" alt="Chevrolet Trax">
+            <button class="rent-button">Wypożycz</button>
+        </div>
+        <div class="car-item">
+            <img src="zdj/Mercedes_A45s.jpg" alt="Mercedes AMG A45s">
+            <button class="rent-button">Wypożycz</button>
+        </div>
+        <div class="car-item">
+            <img src="zdj/Porsche_Macan.jpg" alt="Porsche Macan">
+            <button class="rent-button">Wypożycz</button>
+        </div>
+    </div>
 
+    
+	
 	<div class="bottom-margin">
 	<a class="pure-button button-success" href="{$conf->action_root}rentNew">+ Nowe wypożyczenie</a>
 	</div>	
@@ -51,5 +77,8 @@
 	{/foreach}
 	</tbody>
 	</table>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 {/block}
