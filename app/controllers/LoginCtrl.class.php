@@ -11,7 +11,8 @@ use app\forms\LoginForm;
 class LoginCtrl {
 
     private $form;
-
+    
+    
     public function __construct() {
         $this->form = new LoginForm();
     }
@@ -38,7 +39,7 @@ class LoginCtrl {
         } else if ($this->form->login == "user" && $this->form->pass == "user") {
             RoleUtils::addRole('user');
         } else {
-            Utils::addErrorMessage('Niepoprawny login lub hasło');
+        Utils::addErrorMessage('Niepoprawny login lub hasło');
         }
 
         return !App::getMessages()->isError();

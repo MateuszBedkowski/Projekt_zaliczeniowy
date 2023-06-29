@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
+        <title>Login</title>
         <link rel="stylesheet" href="{$conf->app_url}/css/style_login.css">
     </head>
 
@@ -14,16 +14,16 @@
                 <span class="icon-close"><ion-icon name="close"></ion-icon></span>
                 <div class="form-box login">
                     <h2>Login</h2>
-                    <form action="#">
+                    <form action="{$conf->action_root}login" method="post">
                         <div class="input-box">
                             <span class="icon"><ion-icon name="person"></ion-icon></span>
-                            <input type="text" required>
-                            <label>Login</label>
+                            <input id="id_login" type="text" value="{$form->login}" required>
+                            <label for="id_login">Login</label>
                         </div>
                         <div class="input-box">
                             <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                            <input type="password" required>
-                            <label>Password</label>
+                            <input id="id_pass" type="password" value="{$form->pass}" required>
+                            <label for="id_pass">Password</label>
                         </div>
                         <button type="submit" class="btn">Login</button>
                     </form>

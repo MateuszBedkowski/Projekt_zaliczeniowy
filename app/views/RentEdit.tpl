@@ -1,12 +1,12 @@
 {extends file="main.tpl"}
 
-{block name=content}
+{block name=bottom}
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <link rel="stylesheet" href="{$conf->app_url}/css/style_login.css">
+        <title>RentEdit</title>
+        <link rel="stylesheet" href="{$conf->app_url}/css/style_rent.css">
     </head>
 
     <!DOCTYPE html>

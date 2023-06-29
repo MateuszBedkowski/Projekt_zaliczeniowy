@@ -1,10 +1,10 @@
 {enxtends file="main.tpl"}
-{block name=content}
+{block name=bottom}
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact</title>
+        <title>Rent</title>
         <link rel="stylesheet" href="{$conf->app_url}/css/style_rent.css">
     </head>
 
@@ -37,7 +37,7 @@
                     <button class="rent-button">Wypożycz</button>
                 </div>
                 <div class="car-item">
-                    <img src="zdj/BMW_F36.jpg" alt="BMW F36">
+                    <img src="../../zdj/BMW_F36.jpg" alt="BMW F36">
                     <button class="rent-button">Wypożycz</button>
                 </div>
                 <div class="car-item">

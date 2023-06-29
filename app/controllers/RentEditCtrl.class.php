@@ -115,7 +115,7 @@ class RentEditCtrl {
             }
         }
 
-        App::getRouter()->forwardTo('rentList');
+        App::getRouter()->forwardTo('RentList');
     }
 
     public function action_rentSave() {
@@ -160,7 +160,7 @@ class RentEditCtrl {
                     Utils::addErrorMessage($e->getMessage());
             }
 
-            App::getRouter()->forwardTo('rentList');
+            App::getRouter()->forwardTo('RentList');
         } else {
             $this->generateView();
         }
