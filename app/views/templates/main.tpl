@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="{$conf->app_url}/css/style.css">
     {block name=head_style}
 
-
     {/block}
 </head>
 
@@ -20,9 +19,9 @@
                 <a href="{$conf->action_root}rentList">Rent</a>
                 <a href="{$conf->action_root}contact">Contact</a>
                 {if count($conf->roles)>0}
-                <button href="{$conf->action_root}logout" class="btnLogin-popup">Login</button>
+                <button href="{$conf->action_root}logout" class="btnLogin-popup">Logout</button>
                 {else}    
-                <button href="{$conf->action_root}loginShow" class="btnLogin-popup">Logout</button>
+                <button href="{$conf->action_root}loginShow" class="btnLogin-popup">Login</button>
                 {/if}
             </nav>
     </header>
