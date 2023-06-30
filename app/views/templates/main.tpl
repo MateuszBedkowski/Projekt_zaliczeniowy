@@ -24,6 +24,7 @@
             {else}    
                 <a href="{$conf->action_root}loginShow" class"btnLogin-popup"><button class="btnLogin-popup">Login</button></a>
             {/if}
+            
     </header>
 
 {block name=top} {/block}
