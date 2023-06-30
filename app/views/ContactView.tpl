@@ -8,7 +8,7 @@
         <title>Contact</title>
         <link rel="stylesheet" href="{$conf->app_url}/css/style_contact.css">
     </head>
-
+        <body> 
             <div class="wrapper">
                 <div class="form-box login">
                     <h2>Contact</h2>

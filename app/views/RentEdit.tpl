@@ -29,15 +29,15 @@
                         </div>
                         <div class="pure-control-group">
                             <label for="klienci_idklient">klient id</label>
-                            <input id="klienci_idklient" type="text" placeholder="klient id" name="klient id" value="{$form->klienci_idklient}">
+                            <input id="klienci_idklient" type="text" placeholder="klient id" name="klienci_idklient" value="{$form->klienci_idklient}">
                         </div>
                         <div class="pure-control-group">
                             <label for="samochody_idsamochod">samochod id</label>
-                            <input id="samochody_idsamochod" type="text" placeholder="samochod id" name="samochod id" value="{$form->samochody_idsamochod}">
+                            <input id="samochody_idsamochod" type="text" placeholder="samochod id" name="samochody_idsamochod" value="{$form->samochody_idsamochod}">
                         </div>
                         <div class="pure-control-group">
                             <label for="pracownicy_idpracownik">pracownik id</label>
-                            <input id="pracownicy_idpracownik" type="text" placeholder="pracownik id" name="pracownik id" value="{$form->pracownicy_idpracownik}">
+                            <input id="pracownicy_idpracownik" type="text" placeholder="pracownik id" name="pracownicy_idpracownik" value="{$form->pracownicy_idpracownik}">
                         </div>
                         <div class="pure-controls">
                             <input type="submit" class="pure-button pure-button-primary" value="Zapisz"/>

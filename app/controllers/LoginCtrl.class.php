@@ -12,7 +12,6 @@ class LoginCtrl {
 
     private $form;
     
-    
     public function __construct() {
         $this->form = new LoginForm();
     }

@@ -62,29 +62,29 @@
 					</table>
 				</div>
 				<div class="car-list">
-					<div class="car-item">
+					<div class="car-item" >
 						<img src="../public/cars/Audi_S3.jpg" alt="Audi S3">
-						<button class="rent-button">Wypożycz</button>
+						<a href="{$conf->action_url}rentNew"><button class="rent-button">Wypożycz</button></a>
 					</div>
 					<div class="car-item">
 						<img src="../public/cars/BMW_F30.jpg" alt="BMW F30">
-						<button class="rent-button">Wypożycz</button>
+						<a href="{$conf->action_url}rentNew"><button class="rent-button">Wypożycz</button></a>
 					</div>
 					<div class="car-item">
 						<img src="../public/cars/BMW_F36.jpg" alt="BMW F36">
-						<button class="rent-button">Wypożycz</button>
+						<a href="{$conf->action_url}rentNew"><button class="rent-button">Wypożycz</button></a>
 					</div>
 					<div class="car-item">
 						<img src="../public/cars/Chevrolet_Trax.jpg" alt="Chevrolet Trax">
-						<button class="rent-button">Wypożycz</button>
+						<a href="{$conf->action_url}rentNew"><button class="rent-button">Wypożycz</button></a>
 					</div>
 					<div class="car-item">
 						<img src="../public/cars/Mercedes_A45s.jpg" alt="Mercedes AMG A45s">
-						<button class="rent-button">Wypożycz</button>
+						<a href="{$conf->action_url}rentNew"><button class="rent-button">Wypożycz</button></a>
 					</div>
 					<div class="car-item">
 						<img src="../public/cars/Porsche_Macan.jpg" alt="Porsche Macan">
-						<button class="rent-button">Wypożycz</button>
+						<a href="{$conf->action_url}rentNew"><button class="rent-button">Wypożycz</button></a>
 					</div>
 				</div>
 

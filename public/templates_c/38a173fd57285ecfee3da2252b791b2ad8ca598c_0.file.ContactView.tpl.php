@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-06-27 17:46:57
+/* Smarty version 4.3.1, created on 2023-06-30 16:23:15
   from 'C:\xampp\htdocs\Projekt\app\views\ContactView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_649b047198f0a9_82550652',
+  'unifunc' => 'content_649ee553759579_55642915',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '38a173fd57285ecfee3da2252b791b2ad8ca598c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Projekt\\app\\views\\ContactView.tpl',
-      1 => 1687880802,
+      1 => 1688134993,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_649b047198f0a9_82550652 (Smarty_Internal_Template $_smarty_tpl) {
+function content_649ee553759579_55642915 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1180751280649b047198b015_70950578', 'bottom');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_692099803649ee553755767_03018936', 'bottom');
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'bottom'} */
-class Block_1180751280649b047198b015_70950578 extends Smarty_Internal_Block
+class Block_692099803649ee553755767_03018936 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'bottom' => 
   array (
-    0 => 'Block_1180751280649b047198b015_70950578',
+    0 => 'Block_692099803649ee553755767_03018936',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -52,7 +52,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
 /css/style_contact.css">
     </head>
-
+        <body> 
             <div class="wrapper">
                 <div class="form-box login">
                     <h2>Contact</h2>

@@ -11,18 +11,18 @@
     <html lang="en">
         <body>
             <div class="wrapper">
-                <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+                {*<span class="icon-close"><ion-icon name="close"></ion-icon></span>*}
                 <div class="form-box login">
                     <h2>Login</h2>
                     <form action="{$conf->action_root}login" method="post">
                         <div class="input-box">
                             <span class="icon"><ion-icon name="person"></ion-icon></span>
-                            <input id="id_login" type="text" value="{$form->login}" required>
+                            <input id="id_login" type="text" name="login" value="{$form->login}" required>
                             <label for="id_login">Login</label>
                         </div>
                         <div class="input-box">
                             <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                            <input id="id_pass" type="password" value="{$form->pass}" required>
+                            <input id="id_pass" type="password" name="pass" required>
                             <label for="id_pass">Password</label>
                         </div>
                         <button type="submit" class="btn">Login</button>
