@@ -19,8 +19,8 @@ class RentEditCtrl {
     public function validateSave() {
 
         $this->form->idwypozyczenie = ParamUtils::getFromRequest('idwypozyczenie', true, 'Błędne wywołanie aplikacji');
-        $this->form->poczatek = ParamUtils::getFromRequest('name', true, 'Błędne wywołanie aplikacji');
-        $this->form->koniec = ParamUtils::getFromRequest('surname', true, 'Błędne wywołanie aplikacji');
+        $this->form->poczatek = ParamUtils::getFromRequest('poczatek', true, 'Błędne wywołanie aplikacji');
+        $this->form->koniec = ParamUtils::getFromRequest('koniec', true, 'Błędne wywołanie aplikacji');
         $this->form->kwota = ParamUtils::getFromRequest('kwota', true, 'Błędne wywołanie aplikacji');
         $this->form->klienci_idklient = ParamUtils::getFromRequest('klienci_idklient', true, 'Błędne wywołanie aplikacji');
         $this->form->samochody_idsamochod = ParamUtils::getFromRequest('samochody_idsamochod', true, 'Błędne wywołanie aplikacji');
@@ -84,7 +84,7 @@ class RentEditCtrl {
                     "idwypozyczenie" => $this->form->idwypozyczenie
                 ]);
                 $this->form->idwypozyczenie = $record['idwypozyczenie'];
-                $this->form->poczate = $record['poczatek'];
+                $this->form->poczatek = $record['poczatek'];
                 $this->form->koniec = $record['koniec'];
                 $this->form->kwota = $record['kwota'];
                 $this->form->klienci_idklient = $record['klienci_idklient'];
@@ -131,10 +131,10 @@ class RentEditCtrl {
                         App::getDB()->insert("wypozyczenie", [
                             "poczatek" => $this->form->poczatek,
                             "koniec" => $this->form->koniec,
-                            "kwota" => $this->form->birthdate,
-                            "klienci_idklienci" => $this->form->klienci_idklienci,
+                            "kwota" => $this->form->kwota,
+                            "klienci_idklient" => $this->form->klienci_idklient,
                             "samochody_idsamochod" => $this->form->samochody_idsamochod,
-                            "pracownicy_idpracownik" => $this->form->pracownycy_idpracownik
+                            "pracownicy_idpracownik" => $this->form->pracownicy_idpracownik
                         ]);
                     } else { //za dużo rekordów
                         Utils::addInfoMessage('Ograniczenie: Zbyt dużo rekordów. Aby dodać nowy usuń wybrany wpis.');
@@ -145,10 +145,10 @@ class RentEditCtrl {
                     App::getDB()->update("wypozyczenie", [
                         "poczatek" => $this->form->poczatek,
                         "koniec" => $this->form->koniec,
-                        "kwota" => $this->form->birthdate,
-                        "klienci_idklienci" => $this->form->klienci_idklienci,
+                        "kwota" => $this->form->kwota,
+                        "klienci_idklient" => $this->form->klienci_idklient,
                         "samochody_idsamochod" => $this->form->samochody_idsamochod,
-                        "pracownicy_idpracownik" => $this->form->pracownycy_idpracownik
+                        "pracownicy_idpracownik" => $this->form->pracownicy_idpracownik
                             ], [
                         "idwypozyczenie" => $this->form->idwypozyczenie
                     ]);

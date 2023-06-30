@@ -16,7 +16,7 @@
                     <fieldset>
                         <legend>Wypożyczenie</legend>
                         <div class="pure-control-group">
-                            <label for="name">poczatek</label>
+                            <label for="poczatek">poczatek</label>
                             <input id="poczatek" type="text" placeholder="poczatek" name="poczatek" value="{$form->poczatek}">
                         </div>
                         <div class="pure-control-group">

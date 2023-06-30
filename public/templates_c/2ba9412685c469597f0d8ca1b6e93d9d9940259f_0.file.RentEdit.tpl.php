@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-06-30 15:46:45
+/* Smarty version 4.3.1, created on 2023-06-30 18:22:13
   from 'C:\xampp\htdocs\Projekt\app\views\RentEdit.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_649edcc5931e77_80037612',
+  'unifunc' => 'content_649f0135c8cd01_26962844',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2ba9412685c469597f0d8ca1b6e93d9d9940259f' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Projekt\\app\\views\\RentEdit.tpl',
-      1 => 1688132802,
+      1 => 1688142126,
       2 => 'file',
     ),
   ),
@@ -20,23 +20,23 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_649edcc5931e77_80037612 (Smarty_Internal_Template $_smarty_tpl) {
+function content_649f0135c8cd01_26962844 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_502193827649edcc592c0e8_12903736', 'bottom');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_515303382649f0135c86143_30317847', 'bottom');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'bottom'} */
-class Block_502193827649edcc592c0e8_12903736 extends Smarty_Internal_Block
+class Block_515303382649f0135c86143_30317847 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'bottom' => 
   array (
-    0 => 'Block_502193827649edcc592c0e8_12903736',
+    0 => 'Block_515303382649f0135c86143_30317847',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -59,7 +59,7 @@ rentSave" method="post" class="pure-form pure-form-aligned">
                     <fieldset>
                         <legend>Wypożyczenie</legend>
                         <div class="pure-control-group">
-                            <label for="name">poczatek</label>
+                            <label for="poczatek">poczatek</label>
                             <input id="poczatek" type="text" placeholder="poczatek" name="poczatek" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->poczatek;?>
 ">
                         </div>
