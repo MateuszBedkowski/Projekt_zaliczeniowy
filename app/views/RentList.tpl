@@ -1,5 +1,11 @@
 {extends file="main.tpl"}
 
+{block name=head_style}
+    <link rel="stylesheet" href="{$conf->app_url}/css/style.css">
+    <link rel="stylesheet" href="{$conf->app_url}/css/style_rent.css">
+
+{/block}
+
 {block name=bottom}
 	<head>
         <meta charset="UTF-8">
@@ -11,14 +17,16 @@
 	<!DOCTYPE html>
 		<html lang="en">
 			<body>
-				<div class="bottom-margin">
-					<form class="pure-form pure-form-stacked" action="{$conf->action_url}rentList">
-						<legend>Opcje wyszukiwania</legend>
-						<fieldset>
-							<input type="text" placeholder="kwota" name="kwota" value="{$searchForm->kwota}" /><br />
-							<button type="submit" class="pure-button pure-button-primary">Filtruj</button>
-						</fieldset>
-					</form>
+				<div class="filter">
+					<div class="bottom-margin">
+						<form class="pure-form pure-form-stacked" action="{$conf->action_url}rentList">
+							<legend>Filtrowanie</legend>
+							<fieldset>
+								<input type="text" placeholder="kwota" name="kwota" value="{$searchForm->kwota}" /><br />
+								<button type="submit" class="pure-button pure-button-primary">Filtruj</button>
+							</fieldset>
+						</form>
+					</div>
 				</div>	
 				<div class="table-container">
 					<table id="tab_wypozyczenie" class="pure-table pure-table-bordered">

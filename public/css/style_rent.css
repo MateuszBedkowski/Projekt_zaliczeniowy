@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    color: #000;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:url('../zdj/rent.jpg') no-repeat;
+    background:url('../zdj/wp.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -81,10 +82,16 @@ header {
     color: #000
 }
 
+.filter {
+    float: inline-start;
+    margin: 25px;
+    text-decoration-color: #fff;
+}
+
 .table-container {
     float: left;
     overflow: auto;
-    width: 50%;
+    width: 85%;
 }
 
 .car-list {

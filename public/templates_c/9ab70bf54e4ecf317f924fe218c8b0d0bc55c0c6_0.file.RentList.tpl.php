@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-06-29 18:26:51
+/* Smarty version 4.3.1, created on 2023-06-30 09:29:57
   from 'C:\xampp\htdocs\Projekt\app\views\RentList.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_649db0cb727983_04707931',
+  'unifunc' => 'content_649e8475eb5ae4_14242019',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9ab70bf54e4ecf317f924fe218c8b0d0bc55c0c6' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Projekt\\app\\views\\RentList.tpl',
-      1 => 1688056004,
+      1 => 1688110174,
       2 => 'file',
     ),
   ),
@@ -20,23 +20,49 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_649db0cb727983_04707931 (Smarty_Internal_Template $_smarty_tpl) {
+function content_649e8475eb5ae4_14242019 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_373619756649db0cb71df54_94147537', 'bottom');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1543120954649e8475eaba08_62718346', 'head_style');
+?>
+
+
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_242054781649e8475eae6c5_63898313', 'bottom');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
+/* {block 'head_style'} */
+class Block_1543120954649e8475eaba08_62718346 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'head_style' => 
+  array (
+    0 => 'Block_1543120954649e8475eaba08_62718346',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
+/css/style.css">
+    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
+/css/style_rent.css">
+
+<?php
+}
+}
+/* {/block 'head_style'} */
 /* {block 'bottom'} */
-class Block_373619756649db0cb71df54_94147537 extends Smarty_Internal_Block
+class Block_242054781649e8475eae6c5_63898313 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'bottom' => 
   array (
-    0 => 'Block_373619756649db0cb71df54_94147537',
+    0 => 'Block_242054781649e8475eae6c5_63898313',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -53,16 +79,18 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 	<!DOCTYPE html>
 		<html lang="en">
 			<body>
-				<div class="bottom-margin">
-					<form class="pure-form pure-form-stacked" action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_url;?>
+				<div class="filter">
+					<div class="bottom-margin">
+						<form class="pure-form pure-form-stacked" action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_url;?>
 rentList">
-						<legend>Opcje wyszukiwania</legend>
-						<fieldset>
-							<input type="text" placeholder="kwota" name="kwota" value="<?php echo $_smarty_tpl->tpl_vars['searchForm']->value->kwota;?>
+							<legend>Filtrowanie</legend>
+							<fieldset>
+								<input type="text" placeholder="kwota" name="kwota" value="<?php echo $_smarty_tpl->tpl_vars['searchForm']->value->kwota;?>
 " /><br />
-							<button type="submit" class="pure-button pure-button-primary">Filtruj</button>
-						</fieldset>
-					</form>
+								<button type="submit" class="pure-button pure-button-primary">Filtruj</button>
+							</fieldset>
+						</form>
+					</div>
 				</div>	
 				<div class="table-container">
 					<table id="tab_wypozyczenie" class="pure-table pure-table-bordered">

@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background:url('../zdj/rent.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 .messages { }
 .messages ul { list-style-type: none; padding: 0; }
 .msg{
@@ -24,6 +14,7 @@ body {
 
 .bottom-margin{
 	margin-bottom: 1em;
+    margin: 20px;
 }
 
 .top-margin{
