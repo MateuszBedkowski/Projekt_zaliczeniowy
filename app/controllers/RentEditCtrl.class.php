@@ -160,7 +160,7 @@ class RentEditCtrl {
                     Utils::addErrorMessage($e->getMessage());
             }
 
-            App::getRouter()->forwardTo('RentList');
+            App::getRouter()->redirectTo('RentList');
         } else {
             $this->generateView();
         }

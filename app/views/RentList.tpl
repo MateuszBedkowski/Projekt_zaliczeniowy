@@ -44,8 +44,8 @@
 								{foreach $wypozyczenie as $w}
 									{strip}
 										<tr>
-											<td>{$w["poczatek"]}</td>
-											<td>{$w["koniec"]}</td>
+											<td>{$w["poczatek"]|date_format:"%Y-%m-%d"}</td>
+											<td>{$w["koniec"]|date_format:"%Y-%m-%d"}</td>
 											<td>{$w["kwota"]}</td>
 											<td>{$w["klienci_idklient"]}</td>
 											<td>{$w["samochody_idsamochod"]}</td>

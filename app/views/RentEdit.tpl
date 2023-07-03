@@ -17,11 +17,11 @@
                         <legend>Wypożyczenie</legend>
                         <div class="pure-control-group">
                             <label for="poczatek">poczatek</label>
-                            <input id="poczatek" type="text" placeholder="poczatek" name="poczatek" value="{$form->poczatek}">
+                            <input id="poczatek" type="text" placeholder="poczatek" name="poczatek" value="{$form->poczatek|date_format:"%Y-%m-%d"}">
                         </div>
                         <div class="pure-control-group">
                             <label for="koniec">koniec</label>
-                            <input id="koniec" type="text" placeholder="koniec" name="koniec" value="{$form->koniec}">
+                            <input id="koniec" type="text" placeholder="koniec" name="koniec" value="{$form->koniec|date_format:"%Y-%m-%d"}">
                         </div>
                         <div class="pure-control-group">
                             <label for="kwota">kwota</label>
